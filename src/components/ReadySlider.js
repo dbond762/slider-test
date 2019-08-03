@@ -42,7 +42,11 @@ function ReadySlider() {
           <span className="box__text box-4__text">СС риски</span>
         </div>
       </Slide>
-      <Slide className="slide-2">Slide 2</Slide>
+      <Slide className="slide-2">
+        <div className="ice">
+          <h1 className="slide-2__header">Основа терапии — патогенез СД2</h1>
+        </div>
+      </Slide>
       <Slide className="slide-3">Slide 3</Slide>
     </Slider>
   );
