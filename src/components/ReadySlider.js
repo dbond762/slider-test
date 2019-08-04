@@ -7,7 +7,7 @@ import Slider from './Slider';
 
 function ReadySlider() {
   return (
-    <Slider>
+    <Slider height={1536}>
       <Slide className="slide-1">
         <h1 className="slide-1__header">Всегда ли цели терапии СД2 на поверхности?</h1>
         <div className="box box-1 slide-1__box-1">

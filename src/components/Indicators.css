@@ -1,0 +1,14 @@
+.indicators {
+
+}
+.indicators__circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 7px 0;
+  cursor: pointer;
+}
+.indicators__circle--active {
+  background: #f78b1f;
+}
