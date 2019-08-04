@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './ReadySlider.css';
+import Scheme from './Scheme';
 import Slide from './Slide';
 import Slider from './Slider';
 
@@ -43,11 +44,14 @@ function ReadySlider() {
         </div>
       </Slide>
       <Slide className="slide-2">
-        <div className="ice">
-          <h1 className="slide-2__header">Основа терапии — патогенез СД2</h1>
-        </div>
+        <div className="slide-2__ice"></div>
+        <h1 className="slide-2__header">Основа терапии — патогенез СД2</h1>
       </Slide>
-      <Slide className="slide-3">Slide 3</Slide>
+      <Slide className="slide-3">
+        <div className="slide-3__ice"></div>
+        <h2 className="slide-3__header">Звенья патогенеза СД2</h2>
+        <Scheme/>
+      </Slide>
     </Slider>
   );
 }

@@ -1,0 +1,137 @@
+.scheme {
+  position: relative;
+}
+.scheme__box-1 {
+  position: absolute;
+  left: 785px;
+  top: 0;
+}
+.scheme__box-2 {
+  position: absolute;
+  left: 604px;
+  top: 394px;
+}
+.scheme__box-3 {
+  position: absolute;
+  left: 978px;
+  top: 394px;
+}
+.scheme__glukagon {
+  position: absolute;
+  left: 981px;
+  top: 564px;
+}
+.scheme__giperglikemiya {
+  position: absolute;
+  left: 761px;
+  top: 688px;
+}
+.scheme__box-11 {
+  position: absolute;
+  left: 759px;
+  top: 811px;
+}
+.scheme__box-8 {
+  position: absolute;
+  left: 181px;
+  top: 157px;
+}
+.scheme__box-9 {
+  position: absolute;
+  left: 0;
+  top: 343px;
+}
+.scheme__alimin {
+  position: absolute;
+  left: 435px;
+  top: 530px;
+}
+.scheme__box-10 {
+  position: absolute;
+  left: 245px;
+  top: 630px;
+}
+.scheme__box-7 {
+  position: absolute;
+  left: 1325px;
+  top: 165px;
+}
+.scheme__rect {
+  position: absolute;
+  left: 1300px;
+  top: 361px;
+}
+
+.scheme-box {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.scheme-box--vertical {
+  flex-direction: column;
+}
+.scheme-box__desc {
+  display: flex;
+  margin: 0 25px;
+  align-items: center;
+}
+.scheme-box__desc--left {
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.scheme-box__desc--right {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.scheme-box__number {
+  font: 73px Lato, sans-serif;
+}
+.scheme-box__number--wide {
+  margin-right: 35px;
+}
+.scheme-box__text {
+  font: 500 39px Lato, sans-serif;
+}
+.scheme-box__text--large {
+  font-size: 50px;
+}
+.scheme-box__text--small {
+  font-size: 30px;
+}
+.scheme-box__elipse {
+  width: 121px;
+  height: 121px;
+  border-radius: 50%;
+  background: #335;
+  display: flex;
+}
+.scheme-box__elipse--large {
+  width: 165px;
+  height: 165px;
+}
+.scheme-box__img-wrap {
+  margin: auto;
+}
+.scheme-box__img {
+  width: 110px;
+}
+
+.beta {
+  font: 700 133px Lato, sans-serif;
+  margin: auto;
+  display: inline-block;
+}
+
+.scheme-rect {
+  width: 518px;
+  height: 645px;
+  border-radius: 95px 95px 0 0;
+  background: #335;
+}
+.scheme-rect__text {
+  margin: 47px 60px 40px;
+}
+.scheme-rect__box {
+  margin: 0 0 49px 34px;
+}

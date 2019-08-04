@@ -109,12 +109,15 @@
   background: url(../assets/img/back2.png) center / cover;
   height: 1536px;
   overflow: hidden;
+  position: relative;
 }
-.ice {
+.slide-2__ice {
   background: url(../assets/img/ice.png) no-repeat;
   width: 100%;
   height: 100%;
-  margin: 66px 0 0 164px;
+  left: 164px;
+  top: 66px;
+  position: absolute;
 }
 .slide-2__header {
   font: 300 100px GothamPro, sans-serif;
@@ -122,4 +125,28 @@
   color: #fff;
   display: inline-block;
   margin: 510px 0 0 566px;
+}
+
+.slide-3 {
+  background: url(../assets/img/back3.png) center / cover;
+  height: 1536px;
+  position: relative;
+  overflow: hidden;
+}
+.slide-3__ice {
+  background: url(../assets/img/ice2.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  left: -10px;
+  top: 217px;
+  position: absolute;
+}
+.slide-3__header {
+  font: 60px GothamPro, sans-serif;
+  color: #fff;
+  display: inline-block;
+  margin: 233px 0 0 168px;
+}
+.slide-3__scheme {
+  margin: 14px 0 0 105px;
 }
