@@ -35,6 +35,38 @@ class Slider extends Component {
       slide: newSlide,
     });
   }
+
+  nextSlide = () => {
+    this.setState({
+      slide: this.state.slide + 1,
+    });
+  }
+
+  prevSlide = () => {
+    this.setState({
+      slide: this.state.slide - 1,
+    });
+  }
+
+  componentDidMount() {
+    const slider = document.querySelector('.slider');
+    let startY = 0;
+
+    slider.addEventListener('touchstart', e => {
+      e.preventDefault();
+      startY = e.changedTouches[0].pageY;
+    });
+
+    slider.addEventListener('touchend', e => {
+      e.preventDefault();
+      let diff = e.changedTouches[0].pageY - startY;
+      if (diff > 0 && this.state.slide > 0) {
+        this.prevSlide();
+      } else if (diff < 0 && this.state.slide < this.count - 1) {
+        this.nextSlide();
+      }
+    });
+  }
 }
 
 export default Slider;

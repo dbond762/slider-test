@@ -6,6 +6,7 @@
   position: absolute;
   top: 0;
   width: 100%;
+  transition: top .5s ease-in-out;
 }
 .slider__indicators {
   position: absolute;
