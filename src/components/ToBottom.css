@@ -1,10 +1,13 @@
 .to-bottom__btn {
   cursor: pointer;
+  position: relative;
+  z-index: 5;
 }
 .to-bottom__text {
   font: 30px GothamPro, sans-serif;
   color: #fff;
   text-shadow: 0 0 119px rgba(0, 131, 254, 0.09);
+  display: inline-block;
 }
 .to-bottom__shape {
   width: 56px;
@@ -14,4 +17,12 @@
   border-bottom: 5px solid #fff;
   transform: rotate(45deg);
   margin: 0 auto 41px;
+}
+.to-bottom__shine {
+  position: absolute;
+  bottom: 0;
+  left: -873px;
+  width: 1968px;
+  height: 198px;
+  background: url(../assets/img/shine.png);
 }

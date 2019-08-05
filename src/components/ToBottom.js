@@ -9,6 +9,7 @@ function ToBottom(props) {
         <span className="to-bottom__text">Листайте вниз</span>
         <div className="to-bottom__shape"></div>
       </div>
+      <div className="to-bottom__shine"></div>
     </div>
   );
 }
