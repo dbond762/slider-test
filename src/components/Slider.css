@@ -19,7 +19,9 @@
   bottom: 0;
   left: 941px;
   z-index: 50;
+  opacity: 1;
+  transition: opacity .5s ease-out; 
 }
 .slider__to-bottom--hidden {
-  visibility: hidden;
+  opacity: 0;
 }
