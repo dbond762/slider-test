@@ -12,7 +12,7 @@ function Arrow(props) {
         </marker>
       </defs>
       <line x1={props.x1} y1={props.y1} x2={props.x2} y2={props.y2} stroke="#fff"
-        stroke-width="2" marker-end="url(#arrowhead)" />
+        strokeWidth="2" markerEnd="url(#arrowhead)" />
     </svg>
   );
 }
