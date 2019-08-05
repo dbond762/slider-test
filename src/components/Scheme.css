@@ -58,7 +58,7 @@
 }
 .scheme__rect {
   position: absolute;
-  left: 1300px;
+  left: 1310px;
   top: 361px;
 }
 
@@ -103,7 +103,7 @@
   width: 121px;
   height: 121px;
   border-radius: 50%;
-  background: #335;
+  background: #42468d;
   display: flex;
 }
 .scheme-box__elipse--large {
@@ -124,10 +124,10 @@
 }
 
 .scheme-rect {
-  width: 518px;
+  width: 508px;
   height: 645px;
   border-radius: 95px 95px 0 0;
-  background: #335;
+  background: linear-gradient(to bottom, #2b306f, #060e1f);
 }
 .scheme-rect__text {
   margin: 47px 60px 40px;
