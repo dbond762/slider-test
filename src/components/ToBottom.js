@@ -1,8 +1,15 @@
 import React from 'react';
 
-function ToBottom() {
+import './ToBottom.css';
+
+function ToBottom(props) {
   return (
-    <div>ToBottom</div>
+    <div className={`to-bottom ${props.className}`}>
+      <div className="to-bottom__btn" onClick={props.nextSlide.bind(this)}>
+        <span className="to-bottom__text">Листайте вниз</span>
+        <div className="to-bottom__shape"></div>
+      </div>
+    </div>
   );
 }
 

@@ -24,8 +24,8 @@ class Slider extends Component {
           {this.children}
         </div>
         <Indicators className="slider__indicators" count={this.count} activeSlide={this.state.slide}
-        top={this.props.height / 2 - (this.count * 40) / 2} onChangeSlide={this.changeSlide} />
-        <ToBottom/>
+            top={this.props.height / 2 - (this.count * 40) / 2} onChangeSlide={this.changeSlide} />
+        <ToBottom className="slider__to-bottom" nextSlide={this.nextSlide} />
       </div>
     );
   }
@@ -37,15 +37,11 @@ class Slider extends Component {
   }
 
   nextSlide = () => {
-    this.setState({
-      slide: this.state.slide + 1,
-    });
+    this.changeSlide(this.state.slide + 1);
   }
 
   prevSlide = () => {
-    this.setState({
-      slide: this.state.slide - 1,
-    });
+    this.changeSlide(this.state.slide - 1);
   }
 
   componentDidMount() {
@@ -59,7 +55,8 @@ class Slider extends Component {
 
     slider.addEventListener('touchend', e => {
       e.preventDefault();
-      let diff = e.changedTouches[0].pageY - startY;
+
+      const diff = e.changedTouches[0].pageY - startY;
       if (diff > 0 && this.state.slide > 0) {
         this.prevSlide();
       } else if (diff < 0 && this.state.slide < this.count - 1) {

@@ -1,0 +1,17 @@
+.to-bottom__btn {
+  cursor: pointer;
+}
+.to-bottom__text {
+  font: 30px GothamPro, sans-serif;
+  color: #fff;
+  text-shadow: 0 0 119px rgba(0, 131, 254, 0.09);
+}
+.to-bottom__shape {
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  border-right: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  transform: rotate(45deg);
+  margin: 0 auto 41px;
+}
