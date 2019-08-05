@@ -25,7 +25,7 @@ class Slider extends Component {
         </div>
         <Indicators className="slider__indicators" count={this.count} activeSlide={this.state.slide}
             top={this.props.height / 2 - (this.count * 40) / 2} onChangeSlide={this.changeSlide} />
-        <ToBottom className="slider__to-bottom" nextSlide={this.nextSlide} />
+        <ToBottom className={`slider__to-bottom ${this.state.slide === this.count - 1 ? 'slider__to-bottom--hidden' : ''}`} nextSlide={this.nextSlide} />
       </div>
     );
   }

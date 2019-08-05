@@ -20,3 +20,6 @@
   left: 941px;
   z-index: 50;
 }
+.slider__to-bottom--hidden {
+  visibility: hidden;
+}
